@@ -1,0 +1,19 @@
+# Logs
+logs
+*.log
+
+# secrets
+config.*.yml
+
+# Mac files
+.DS_Store
+
+*.xcodeproj/xcuserdata
+**/*.xcodeproj/xcuserdata
+**/*.xcworkspace/xcuserdata
+.env.sh
+screenshots
+Bruit Blanc.app.dSYM.zip
+Bruit Blanc.ipa
+Carthage
+fastlane/report.xml

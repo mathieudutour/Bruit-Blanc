@@ -11,7 +11,43 @@
 		03646E6528006A8E001F29F7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03646E6428006A8E001F29F7 /* ContentView.swift */; };
 		03646E6728006A8F001F29F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03646E6628006A8F001F29F7 /* Assets.xcassets */; };
 		03646E6A28006A8F001F29F7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03646E6928006A8F001F29F7 /* Preview Assets.xcassets */; };
+		03646E7228006B5B001F29F7 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03646E7128006B5B001F29F7 /* Color.swift */; };
+		03646E772800724A001F29F7 /* rain.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 03646E7628007072001F29F7 /* rain.m4a */; };
+		03646E7A28007402001F29F7 /* stream.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03646E7928007402001F29F7 /* stream.wav */; };
+		03646E7C280074F5001F29F7 /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03646E7B280074F5001F29F7 /* Sounds.swift */; };
+		03646E7F28007E54001F29F7 /* forest.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03646E7E28007E54001F29F7 /* forest.wav */; };
+		03646E81280081E4001F29F7 /* waves.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 03646E80280081C8001F29F7 /* waves.m4a */; };
+		03646E83280082C5001F29F7 /* ducks.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03646E82280082C5001F29F7 /* ducks.wav */; };
+		03646E85280082D9001F29F7 /* birds.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 03646E84280082D0001F29F7 /* birds.m4a */; };
+		03646E912800B4F1001F29F7 /* white.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03646E902800B4F1001F29F7 /* white.wav */; };
+		03646E932800B4F7001F29F7 /* pink.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03646E922800B4F7001F29F7 /* pink.wav */; };
+		03646E952800B529001F29F7 /* brownian.wav in Resources */ = {isa = PBXBuildFile; fileRef = 03646E942800B529001F29F7 /* brownian.wav */; };
+		03646E97280180A8001F29F7 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03646E96280180A8001F29F7 /* Bundle.swift */; };
+		03646EA32801FC3B001F29F7 /* Bruit_BlancUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03646EA22801FC3B001F29F7 /* Bruit_BlancUITests.swift */; };
+		03646EA52801FC3B001F29F7 /* Bruit_BlancUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03646EA42801FC3B001F29F7 /* Bruit_BlancUITestsLaunchTests.swift */; };
+		03646EAC2801FCCF001F29F7 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03646EAB2801FCCF001F29F7 /* SnapshotHelper.swift */; };
+		03646EB22802D943001F29F7 /* car-engine.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 03646EB02802D879001F29F7 /* car-engine.m4a */; };
+		03646EB32802D943001F29F7 /* crickets.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 03646EAE2802D879001F29F7 /* crickets.m4a */; };
+		03646EB42802D943001F29F7 /* fire.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 03646EB12802D879001F29F7 /* fire.m4a */; };
+		03646EB52802D943001F29F7 /* vacuum-cleaner.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 03646EAD2802D878001F29F7 /* vacuum-cleaner.m4a */; };
+		03646EB62802D943001F29F7 /* water-faucet.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 03646EAF2802D879001F29F7 /* water-faucet.m4a */; };
+		03646EB82802F5A8001F29F7 /* Equalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03646EB72802F5A8001F29F7 /* Equalizer.swift */; };
+		03646EBA2802F632001F29F7 /* PlayState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03646EB92802F632001F29F7 /* PlayState.swift */; };
+		036D7CC6280474F600D44345 /* TextAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036D7CC5280474F600D44345 /* TextAlert.swift */; };
+		038AF2DE2804049900F5DBB4 /* AudioRecorderState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038AF2DD2804049900F5DBB4 /* AudioRecorderState.swift */; };
+		038AF2E12804065C00F5DBB4 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038AF2E02804065C00F5DBB4 /* Recorder.swift */; };
+		038AF2E3280411BE00F5DBB4 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038AF2E2280411BE00F5DBB4 /* Date.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03646EA62801FC3B001F29F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03646E5728006A8E001F29F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03646E5E28006A8E001F29F7;
+			remoteInfo = "Bruit Blanc";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		03646E5F28006A8E001F29F7 /* Bruit Blanc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bruit Blanc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +55,45 @@
 		03646E6428006A8E001F29F7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		03646E6628006A8F001F29F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03646E6928006A8F001F29F7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		03646E7128006B5B001F29F7 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		03646E7628007072001F29F7 /* rain.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = rain.m4a; sourceTree = "<group>"; };
+		03646E782800732A001F29F7 /* Bruit-Blanc-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Bruit-Blanc-Info.plist"; sourceTree = SOURCE_ROOT; };
+		03646E7928007402001F29F7 /* stream.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = stream.wav; sourceTree = "<group>"; };
+		03646E7B280074F5001F29F7 /* Sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
+		03646E7E28007E54001F29F7 /* forest.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = forest.wav; sourceTree = "<group>"; };
+		03646E80280081C8001F29F7 /* waves.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = waves.m4a; sourceTree = "<group>"; };
+		03646E82280082C5001F29F7 /* ducks.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ducks.wav; sourceTree = "<group>"; };
+		03646E84280082D0001F29F7 /* birds.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = birds.m4a; sourceTree = "<group>"; };
+		03646E902800B4F1001F29F7 /* white.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = white.wav; sourceTree = "<group>"; };
+		03646E922800B4F7001F29F7 /* pink.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pink.wav; sourceTree = "<group>"; };
+		03646E942800B529001F29F7 /* brownian.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = brownian.wav; sourceTree = "<group>"; };
+		03646E96280180A8001F29F7 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		03646EA02801FC3B001F29F7 /* Bruit BlancUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bruit BlancUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03646EA22801FC3B001F29F7 /* Bruit_BlancUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bruit_BlancUITests.swift; sourceTree = "<group>"; };
+		03646EA42801FC3B001F29F7 /* Bruit_BlancUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bruit_BlancUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		03646EAB2801FCCF001F29F7 /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
+		03646EAD2802D878001F29F7 /* vacuum-cleaner.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "vacuum-cleaner.m4a"; sourceTree = "<group>"; };
+		03646EAE2802D879001F29F7 /* crickets.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = crickets.m4a; sourceTree = "<group>"; };
+		03646EAF2802D879001F29F7 /* water-faucet.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "water-faucet.m4a"; sourceTree = "<group>"; };
+		03646EB02802D879001F29F7 /* car-engine.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "car-engine.m4a"; sourceTree = "<group>"; };
+		03646EB12802D879001F29F7 /* fire.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = fire.m4a; sourceTree = "<group>"; };
+		03646EB72802F5A8001F29F7 /* Equalizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equalizer.swift; sourceTree = "<group>"; };
+		03646EB92802F632001F29F7 /* PlayState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayState.swift; sourceTree = "<group>"; };
+		036D7CC5280474F600D44345 /* TextAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAlert.swift; sourceTree = "<group>"; };
+		038AF2DD2804049900F5DBB4 /* AudioRecorderState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorderState.swift; sourceTree = "<group>"; };
+		038AF2E02804065C00F5DBB4 /* Recorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
+		038AF2E2280411BE00F5DBB4 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		03646E5C28006A8E001F29F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03646E9D2801FC3B001F29F7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				03646E6128006A8E001F29F7 /* Bruit Blanc */,
+				03646EA12801FC3B001F29F7 /* Bruit BlancUITests */,
 				03646E6028006A8E001F29F7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				03646E5F28006A8E001F29F7 /* Bruit Blanc.app */,
+				03646EA02801FC3B001F29F7 /* Bruit BlancUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,8 +124,16 @@
 		03646E6128006A8E001F29F7 /* Bruit Blanc */ = {
 			isa = PBXGroup;
 			children = (
+				03646E782800732A001F29F7 /* Bruit-Blanc-Info.plist */,
+				03646E7328006CF9001F29F7 /* sounds */,
+				03646E7028006B4E001F29F7 /* extensions */,
 				03646E6228006A8E001F29F7 /* Bruit_BlancApp.swift */,
 				03646E6428006A8E001F29F7 /* ContentView.swift */,
+				036D7CC5280474F600D44345 /* TextAlert.swift */,
+				038AF2E02804065C00F5DBB4 /* Recorder.swift */,
+				03646EB72802F5A8001F29F7 /* Equalizer.swift */,
+				038AF2DF280404AA00F5DBB4 /* state */,
+				03646E7B280074F5001F29F7 /* Sounds.swift */,
 				03646E6628006A8F001F29F7 /* Assets.xcassets */,
 				03646E6828006A8F001F29F7 /* Preview Content */,
 			);
@@ -65,6 +146,56 @@
 				03646E6928006A8F001F29F7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		03646E7028006B4E001F29F7 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				03646E7128006B5B001F29F7 /* Color.swift */,
+				03646E96280180A8001F29F7 /* Bundle.swift */,
+				038AF2E2280411BE00F5DBB4 /* Date.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		03646E7328006CF9001F29F7 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				03646EB02802D879001F29F7 /* car-engine.m4a */,
+				03646EAE2802D879001F29F7 /* crickets.m4a */,
+				03646EB12802D879001F29F7 /* fire.m4a */,
+				03646EAD2802D878001F29F7 /* vacuum-cleaner.m4a */,
+				03646EAF2802D879001F29F7 /* water-faucet.m4a */,
+				03646E902800B4F1001F29F7 /* white.wav */,
+				03646E922800B4F7001F29F7 /* pink.wav */,
+				03646E942800B529001F29F7 /* brownian.wav */,
+				03646E80280081C8001F29F7 /* waves.m4a */,
+				03646E7E28007E54001F29F7 /* forest.wav */,
+				03646E7928007402001F29F7 /* stream.wav */,
+				03646E7628007072001F29F7 /* rain.m4a */,
+				03646E84280082D0001F29F7 /* birds.m4a */,
+				03646E82280082C5001F29F7 /* ducks.wav */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+		03646EA12801FC3B001F29F7 /* Bruit BlancUITests */ = {
+			isa = PBXGroup;
+			children = (
+				03646EA22801FC3B001F29F7 /* Bruit_BlancUITests.swift */,
+				03646EA42801FC3B001F29F7 /* Bruit_BlancUITestsLaunchTests.swift */,
+				03646EAB2801FCCF001F29F7 /* SnapshotHelper.swift */,
+			);
+			path = "Bruit BlancUITests";
+			sourceTree = "<group>";
+		};
+		038AF2DF280404AA00F5DBB4 /* state */ = {
+			isa = PBXGroup;
+			children = (
+				038AF2DD2804049900F5DBB4 /* AudioRecorderState.swift */,
+				03646EB92802F632001F29F7 /* PlayState.swift */,
+			);
+			path = state;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +218,24 @@
 			productReference = 03646E5F28006A8E001F29F7 /* Bruit Blanc.app */;
 			productType = "com.apple.product-type.application";
 		};
+		03646E9F2801FC3B001F29F7 /* Bruit BlancUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03646EAA2801FC3B001F29F7 /* Build configuration list for PBXNativeTarget "Bruit BlancUITests" */;
+			buildPhases = (
+				03646E9C2801FC3B001F29F7 /* Sources */,
+				03646E9D2801FC3B001F29F7 /* Frameworks */,
+				03646E9E2801FC3B001F29F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03646EA72801FC3B001F29F7 /* PBXTargetDependency */,
+			);
+			name = "Bruit BlancUITests";
+			productName = "Bruit BlancUITests";
+			productReference = 03646EA02801FC3B001F29F7 /* Bruit BlancUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +248,10 @@
 				TargetAttributes = {
 					03646E5E28006A8E001F29F7 = {
 						CreatedOnToolsVersion = 13.3;
+					};
+					03646E9F2801FC3B001F29F7 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 03646E5E28006A8E001F29F7;
 					};
 				};
 			};
@@ -116,6 +269,7 @@
 			projectRoot = "";
 			targets = (
 				03646E5E28006A8E001F29F7 /* Bruit Blanc */,
+				03646E9F2801FC3B001F29F7 /* Bruit BlancUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -125,8 +279,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03646EB22802D943001F29F7 /* car-engine.m4a in Resources */,
+				03646EB32802D943001F29F7 /* crickets.m4a in Resources */,
+				03646EB42802D943001F29F7 /* fire.m4a in Resources */,
+				03646EB52802D943001F29F7 /* vacuum-cleaner.m4a in Resources */,
+				03646EB62802D943001F29F7 /* water-faucet.m4a in Resources */,
+				03646E932800B4F7001F29F7 /* pink.wav in Resources */,
+				03646E81280081E4001F29F7 /* waves.m4a in Resources */,
+				03646E7A28007402001F29F7 /* stream.wav in Resources */,
+				03646E912800B4F1001F29F7 /* white.wav in Resources */,
+				03646E85280082D9001F29F7 /* birds.m4a in Resources */,
+				03646E83280082C5001F29F7 /* ducks.wav in Resources */,
+				03646E7F28007E54001F29F7 /* forest.wav in Resources */,
+				03646E772800724A001F29F7 /* rain.m4a in Resources */,
+				03646E952800B529001F29F7 /* brownian.wav in Resources */,
 				03646E6A28006A8F001F29F7 /* Preview Assets.xcassets in Resources */,
 				03646E6728006A8F001F29F7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03646E9E2801FC3B001F29F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,12 +312,39 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				036D7CC6280474F600D44345 /* TextAlert.swift in Sources */,
+				038AF2E12804065C00F5DBB4 /* Recorder.swift in Sources */,
+				038AF2E3280411BE00F5DBB4 /* Date.swift in Sources */,
+				03646EB82802F5A8001F29F7 /* Equalizer.swift in Sources */,
 				03646E6528006A8E001F29F7 /* ContentView.swift in Sources */,
 				03646E6328006A8E001F29F7 /* Bruit_BlancApp.swift in Sources */,
+				03646E7228006B5B001F29F7 /* Color.swift in Sources */,
+				038AF2DE2804049900F5DBB4 /* AudioRecorderState.swift in Sources */,
+				03646E97280180A8001F29F7 /* Bundle.swift in Sources */,
+				03646EBA2802F632001F29F7 /* PlayState.swift in Sources */,
+				03646E7C280074F5001F29F7 /* Sounds.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03646E9C2801FC3B001F29F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03646EA52801FC3B001F29F7 /* Bruit_BlancUITestsLaunchTests.swift in Sources */,
+				03646EA32801FC3B001F29F7 /* Bruit_BlancUITests.swift in Sources */,
+				03646EAC2801FCCF001F29F7 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03646EA72801FC3B001F29F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03646E5E28006A8E001F29F7 /* Bruit Blanc */;
+			targetProxy = 03646EA62801FC3B001F29F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		03646E6B28006A8F001F29F7 /* Debug */ = {
@@ -264,17 +466,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Bruit Blanc/Preview Content\"";
 				DEVELOPMENT_TEAM = 8SEPFSC7S3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "Bruit-Blanc-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bruit Blanc";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -282,6 +486,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.dutour.mathieu.Bruit-Blanc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development me.dutour.mathieu.Bruit-Blanc";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -293,17 +498,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Bruit Blanc/Preview Content\"";
 				DEVELOPMENT_TEAM = 8SEPFSC7S3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "Bruit-Blanc-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Bruit Blanc";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,9 +518,52 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.dutour.mathieu.Bruit-Blanc";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match AppStore me.dutour.mathieu.Bruit-Blanc";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		03646EA82801FC3B001F29F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 8SEPFSC7S3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.dutour.mathieu.Bruit-BlancUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Bruit Blanc";
+			};
+			name = Debug;
+		};
+		03646EA92801FC3B001F29F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = 8SEPFSC7S3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "me.dutour.mathieu.Bruit-BlancUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Bruit Blanc";
 			};
 			name = Release;
 		};
@@ -334,6 +584,15 @@
 			buildConfigurations = (
 				03646E6E28006A8F001F29F7 /* Debug */,
 				03646E6F28006A8F001F29F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03646EAA2801FC3B001F29F7 /* Build configuration list for PBXNativeTarget "Bruit BlancUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03646EA82801FC3B001F29F7 /* Debug */,
+				03646EA92801FC3B001F29F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

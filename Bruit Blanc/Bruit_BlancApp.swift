@@ -11,7 +11,7 @@ import SwiftUI
 struct Bruit_BlancApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().preferredColorScheme(.dark)
         }
     }
 }
