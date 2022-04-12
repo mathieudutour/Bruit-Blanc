@@ -108,12 +108,11 @@ class AudioRecorderState: NSObject, ObservableObject {
     objectWillChange.send(self)
   }
 
+  /// between 0 and 1
   func getLevel() -> Float {
     audioRecorder?.updateMeters()
-    let power = audioRecorder?.averagePower(forChannel: 0) ?? 0
-    let value = max(0, power + 88)
-
-    return value
+    let power = audioRecorder?.averagePower(forChannel: 0) ?? -160
+    return (power + 160) / 160
   }
 
   func deleteSound(_ sound: Sound) {

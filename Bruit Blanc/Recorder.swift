@@ -27,7 +27,7 @@ struct Recorder: View {
   @State private var connectedTimer: Cancellable? = nil
 
   @State private var level: CGFloat = 88
-  @State private var maxWidth = UIScreen.main.bounds.width / 2.2
+  @State private var maxWidth = UIScreen.main.bounds.width / 1.5
 
   var body: some View {
     NavigationView {
@@ -49,17 +49,20 @@ struct Recorder: View {
           ZStack {
             ZStack {
               Circle()
-                .fill(Color.accentColor.opacity(0.05))
+                .fill(Color.white.opacity(0.05))
 
               Circle()
-                .fill(Color.accentColor.opacity(0.08))
-                .frame(width: level / 2, height: level / 2)
+                .fill(Color.white.opacity(0.08))
+                .frame(width: (level - 88) / 2 + 88, height: (level - 88) / 2 + 88)
             }.frame(width: level, height: level)
 
             Button(action: {
               if audioRecorder.recording {
                 audioRecorder.stopRecording()
                 connectedTimer?.cancel()
+                withAnimation(Animation.linear(duration: 0.2)) {
+                  self.level = 88
+                }
               } else {
                 audioRecorder.startRecording(uuid: uuid)
                 connectedTimer = timer.connect()
@@ -80,7 +83,7 @@ struct Recorder: View {
           .padding(.bottom, 40)
           .onReceive(timer) { _ in
             let value = self.audioRecorder.getLevel()
-            let animated = CGFloat(value) * ((UIScreen.main.bounds.width / 2.2) / 88)
+            let animated = CGFloat(value) * (maxWidth - 88)
 
             withAnimation(Animation.linear(duration: 0.01)) {
               self.level = animated + 88
