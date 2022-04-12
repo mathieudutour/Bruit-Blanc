@@ -97,6 +97,12 @@ struct RecordedSoundView: View {
           buttons: [
             .cancel(),
 
+            .default(Text("Share")) {
+              let activityController = UIActivityViewController(activityItems: [URL(fileURLWithPath: sound.path)], applicationActivities: nil)
+
+              UIApplication.shared.windows.first?.rootViewController!.present(activityController, animated: true, completion: nil)
+            },
+
             .default(Text("Rename")) {
               TextAlert().show(
                 title: "Rename \"\(sound.title)\" Recording",

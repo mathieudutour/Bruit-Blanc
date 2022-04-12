@@ -80,6 +80,7 @@
 		03646EB72802F5A8001F29F7 /* Equalizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equalizer.swift; sourceTree = "<group>"; };
 		03646EB92802F632001F29F7 /* PlayState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayState.swift; sourceTree = "<group>"; };
 		036D7CC5280474F600D44345 /* TextAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAlert.swift; sourceTree = "<group>"; };
+		036D7CC82805617700D44345 /* Bruit Blanc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Bruit Blanc.entitlements"; sourceTree = "<group>"; };
 		038AF2DD2804049900F5DBB4 /* AudioRecorderState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorderState.swift; sourceTree = "<group>"; };
 		038AF2E02804065C00F5DBB4 /* Recorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
 		038AF2E2280411BE00F5DBB4 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
@@ -124,6 +125,7 @@
 		03646E6128006A8E001F29F7 /* Bruit Blanc */ = {
 			isa = PBXGroup;
 			children = (
+				036D7CC82805617700D44345 /* Bruit Blanc.entitlements */,
 				03646E782800732A001F29F7 /* Bruit-Blanc-Info.plist */,
 				03646E7328006CF9001F29F7 /* sounds */,
 				03646E7028006B4E001F29F7 /* extensions */,
@@ -466,15 +468,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Bruit Blanc/Bruit Blanc.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = "\"Bruit Blanc/Preview Content\"";
 				DEVELOPMENT_TEAM = 8SEPFSC7S3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Bruit-Blanc-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Bruit Blanc";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to your microphone to record your custom sounds.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -498,15 +502,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Bruit Blanc/Bruit Blanc.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 10;
 				DEVELOPMENT_ASSET_PATHS = "\"Bruit Blanc/Preview Content\"";
 				DEVELOPMENT_TEAM = 8SEPFSC7S3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Bruit-Blanc-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Bruit Blanc";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to your microphone to record your custom sounds.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

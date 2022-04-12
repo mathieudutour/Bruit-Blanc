@@ -13,7 +13,7 @@ class AudioRecorderState: NSObject, ObservableObject {
   let objectWillChange = PassthroughSubject<AudioRecorderState, Never>()
 
   private var audioRecorder: AVAudioRecorder?
-  private let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("Bruit Blanc")
+  private let documentDirectory = FileManager.default.url(forUbiquityContainerIdentifier: nil)?.appendingPathComponent("Documents") ?? FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("Bruit Blanc")
 
   var recordings = [Sound]()
   @Published public var cantRecord: Bool = false

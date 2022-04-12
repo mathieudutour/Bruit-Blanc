@@ -2,6 +2,22 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>LSMinimumSystemVersion</key>
+	<string>12.0</string>
+	<key>NSUbiquitousContainers</key>
+	<dict>
+		<key>iCloud.me.dutour.mathieu.Bruit-Blanc</key>
+		<dict>
+			<key>NSUbiquitousContainerIsDocumentScopePublic</key>
+			<true/>
+			<key>NSUbiquitousContainerName</key>
+			<string>Bruit Blanc</string>
+			<key>NSUbiquitousContainerSupportedFolderLevels</key>
+			<string>One</string>
+		</dict>
+	</dict>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -11,14 +27,6 @@
 	<array>
 		<string>audio</string>
 	</array>
-	<key>ITSAppUsesNonExemptEncryption</key>
-	<false/>
-	<key>CFBundleIdentifier</key>
-	<string></string>
-	<key>LSMinimumSystemVersion</key>
-	<string>12.0</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>We need access to your microphone to record your custom sounds.</string>
 	<key>UILaunchScreen</key>
 	<dict>
 		<key>UIColorName</key>
