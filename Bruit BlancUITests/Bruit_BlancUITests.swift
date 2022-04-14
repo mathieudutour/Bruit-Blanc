@@ -52,7 +52,6 @@ class Bruit_BlancUITests: XCTestCase {
 
     app.navigationBars["Decrescendo"].buttons["Cancel"].tap()
 
-    app.navigationBars["Equalizer"].buttons["Done"].tap()
     scrollViewsQuery.otherElements.containing(.staticText, identifier:"Noises").element.swipeUp()
     elementsQuery.buttons["New"].tap()
 
