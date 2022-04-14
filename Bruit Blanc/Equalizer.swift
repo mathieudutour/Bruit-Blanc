@@ -136,7 +136,7 @@ struct Equalizer: View {
               }
             }
             .padding()
-            .frame(width: (playState.decrescendoTimeLeft != nil ? (formatter.string(from: playState.decrescendoTimeLeft ?? TimeInterval(0)) ?? "") + "0": "Decrescendo").sizeUsingFont(usingFont: UIFont.systemFont(ofSize: 16)).width + 88, height: 88)
+            .frame(width: (playState.decrescendoTimeLeft != nil ? (formatter.string(from: playState.decrescendoTimeLeft ?? TimeInterval(0)) ?? "") + "000": "Decrescendo").sizeUsingFont(usingFont: UIFont.systemFont(ofSize: 16)).width + 88, height: 88)
             .shadow(radius: 10)
             .sheet(isPresented: $showingDecrescendo) {
               Decrescendo(isPresented: $showingDecrescendo, playState: playState)

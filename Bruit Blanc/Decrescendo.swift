@@ -31,7 +31,7 @@ struct Decrescendo: View {
             .foregroundColor(.init(white: 0.7))
             .padding()
           DurationPicker(duration: $duration)
-          Text("After \(formatter.string(from: duration) ?? ""), the volume of the Bruit Blanc will reach 0.")
+          Text("After \(formatter.string(from: duration) ?? ""), the volume of Bruit Blanc will reach 0.")
             .font(.subheadline)
             .foregroundColor(.init(white: 0.7))
             .padding()
