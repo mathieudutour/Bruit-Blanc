@@ -11,6 +11,7 @@ class Bruit_BlancUITests: XCTestCase {
 
   override func setUpWithError() throws {
     // Put setup code here. This method is called before the invocation of each test method in the class.
+    XCUIDevice.shared.orientation = .portrait
 
     // In UI tests it is usually best to stop immediately when a failure occurs.
     continueAfterFailure = false
@@ -44,6 +45,12 @@ class Bruit_BlancUITests: XCTestCase {
     app.sliders.firstMatch.adjust(toNormalizedSliderPosition: 0.7)
 
     snapshot("1 - equalizer")
+
+    app.buttons["Decrescendo"].tap()
+
+    snapshot("3 - decrescendo")
+
+    app.navigationBars["Decrescendo"].buttons["Cancel"].tap()
 
     app.navigationBars["Equalizer"].buttons["Done"].tap()
     scrollViewsQuery.otherElements.containing(.staticText, identifier:"Noises").element.swipeUp()

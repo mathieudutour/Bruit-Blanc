@@ -50,7 +50,7 @@ struct EqualizerLine: View {
 struct Equalizer: View {
   @Binding var isPresented: Bool
   @ObservedObject var playState: PlayState
-  @State private var showingDecrescendo = false
+  @Binding var showingDecrescendo: Bool
 
   let columns = [
       GridItem(.fixed(100)),
@@ -113,7 +113,10 @@ struct Equalizer: View {
               if playState.decrescendoTimeLeft != nil {
                 playState.stopDecrescendo()
               } else {
-                showingDecrescendo.toggle()
+                isPresented = false
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.0001) {
+                  showingDecrescendo.toggle()
+                }
               }
             }) {
               ZStack {
@@ -138,9 +141,6 @@ struct Equalizer: View {
             .padding()
             .frame(width: (playState.decrescendoTimeLeft != nil ? (formatter.string(from: playState.decrescendoTimeLeft ?? TimeInterval(0)) ?? "") + "000": "Decrescendo").sizeUsingFont(usingFont: UIFont.systemFont(ofSize: 16)).width + 88, height: 88)
             .shadow(radius: 10)
-            .sheet(isPresented: $showingDecrescendo) {
-              Decrescendo(isPresented: $showingDecrescendo, playState: playState)
-            }
           }
         }
         .navigationBarTitle(Text("Equalizer"), displayMode: .inline)
@@ -162,7 +162,7 @@ struct Equalizer: View {
 struct Equalizer_Previews: PreviewProvider {
   static var previews: some View {
     StatefulPreview(true) {
-      Equalizer(isPresented: $0, playState: PlayState()).preferredColorScheme(.dark)
+      Equalizer(isPresented: $0, playState: PlayState(), showingDecrescendo: $0).preferredColorScheme(.dark)
     }
   }
 }

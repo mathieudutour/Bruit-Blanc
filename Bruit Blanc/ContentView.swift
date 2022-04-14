@@ -141,6 +141,7 @@ struct ContentView: View {
   @ObservedObject var audioRecorder = AudioRecorderState()
   @State private var showingEqualizer = false
   @State private var showingRecorder = false
+  @State private var showingDecrescendo = false
 
   var body: some View {
     ZStack {
@@ -230,9 +231,6 @@ struct ContentView: View {
             }
           }
           .frame(height: height)
-          .sheet(isPresented: $showingRecorder) {
-            Recorder(isPresented: $showingRecorder, audioRecorder: audioRecorder)
-          }
         }
         .padding(.horizontal)
         .padding(.bottom, 100)
@@ -298,12 +296,19 @@ struct ContentView: View {
             .padding()
             .frame(width: 88, height: 88, alignment: .trailing)
             .shadow(radius: 10)
-            .sheet(isPresented: $showingEqualizer) {
-              Equalizer(isPresented: $showingEqualizer, playState: playState)
-            }
+
           }
         }
       }
+    }
+    .sheet(isPresented: $showingRecorder) {
+      Recorder(isPresented: $showingRecorder, audioRecorder: audioRecorder)
+    }
+    .sheet(isPresented: $showingEqualizer) {
+      Equalizer(isPresented: $showingEqualizer, playState: playState, showingDecrescendo: $showingDecrescendo)
+    }
+    .sheet(isPresented: $showingDecrescendo) {
+      Decrescendo(isPresented: $showingDecrescendo, playState: playState)
     }
   }
 }
