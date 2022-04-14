@@ -34,9 +34,14 @@
 		03646EB82802F5A8001F29F7 /* Equalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03646EB72802F5A8001F29F7 /* Equalizer.swift */; };
 		03646EBA2802F632001F29F7 /* PlayState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03646EB92802F632001F29F7 /* PlayState.swift */; };
 		036D7CC6280474F600D44345 /* TextAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036D7CC5280474F600D44345 /* TextAlert.swift */; };
+		03721DAC2805EC3400BA5E6F /* silence.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 03721DAB2805EC3400BA5E6F /* silence.mp3 */; };
+		03721DB22807F98400BA5E6F /* StatefulPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03721DB12807F98300BA5E6F /* StatefulPreview.swift */; };
+		03721DB4280829FB00BA5E6F /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03721DB3280829FB00BA5E6F /* String.swift */; };
 		038AF2DE2804049900F5DBB4 /* AudioRecorderState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038AF2DD2804049900F5DBB4 /* AudioRecorderState.swift */; };
 		038AF2E12804065C00F5DBB4 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038AF2E02804065C00F5DBB4 /* Recorder.swift */; };
 		038AF2E3280411BE00F5DBB4 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038AF2E2280411BE00F5DBB4 /* Date.swift */; };
+		03A7FFD628057B9200FBD9E7 /* Decrescendo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A7FFD528057B9200FBD9E7 /* Decrescendo.swift */; };
+		03A7FFD828057F6500FBD9E7 /* DurationPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A7FFD728057F6500FBD9E7 /* DurationPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,9 +86,14 @@
 		03646EB92802F632001F29F7 /* PlayState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayState.swift; sourceTree = "<group>"; };
 		036D7CC5280474F600D44345 /* TextAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAlert.swift; sourceTree = "<group>"; };
 		036D7CC82805617700D44345 /* Bruit Blanc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Bruit Blanc.entitlements"; sourceTree = "<group>"; };
+		03721DAB2805EC3400BA5E6F /* silence.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = silence.mp3; sourceTree = "<group>"; };
+		03721DB12807F98300BA5E6F /* StatefulPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatefulPreview.swift; sourceTree = "<group>"; };
+		03721DB3280829FB00BA5E6F /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		038AF2DD2804049900F5DBB4 /* AudioRecorderState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorderState.swift; sourceTree = "<group>"; };
 		038AF2E02804065C00F5DBB4 /* Recorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
 		038AF2E2280411BE00F5DBB4 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		03A7FFD528057B9200FBD9E7 /* Decrescendo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decrescendo.swift; sourceTree = "<group>"; };
+		03A7FFD728057F6500FBD9E7 /* DurationPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +144,9 @@
 				036D7CC5280474F600D44345 /* TextAlert.swift */,
 				038AF2E02804065C00F5DBB4 /* Recorder.swift */,
 				03646EB72802F5A8001F29F7 /* Equalizer.swift */,
+				03A7FFD528057B9200FBD9E7 /* Decrescendo.swift */,
+				03A7FFD728057F6500FBD9E7 /* DurationPicker.swift */,
+				03721DB12807F98300BA5E6F /* StatefulPreview.swift */,
 				038AF2DF280404AA00F5DBB4 /* state */,
 				03646E7B280074F5001F29F7 /* Sounds.swift */,
 				03646E6628006A8F001F29F7 /* Assets.xcassets */,
@@ -156,6 +169,7 @@
 				03646E7128006B5B001F29F7 /* Color.swift */,
 				03646E96280180A8001F29F7 /* Bundle.swift */,
 				038AF2E2280411BE00F5DBB4 /* Date.swift */,
+				03721DB3280829FB00BA5E6F /* String.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -163,6 +177,7 @@
 		03646E7328006CF9001F29F7 /* sounds */ = {
 			isa = PBXGroup;
 			children = (
+				03721DAB2805EC3400BA5E6F /* silence.mp3 */,
 				03646EB02802D879001F29F7 /* car-engine.m4a */,
 				03646EAE2802D879001F29F7 /* crickets.m4a */,
 				03646EB12802D879001F29F7 /* fire.m4a */,
@@ -292,6 +307,7 @@
 				03646E912800B4F1001F29F7 /* white.wav in Resources */,
 				03646E85280082D9001F29F7 /* birds.m4a in Resources */,
 				03646E83280082C5001F29F7 /* ducks.wav in Resources */,
+				03721DAC2805EC3400BA5E6F /* silence.mp3 in Resources */,
 				03646E7F28007E54001F29F7 /* forest.wav in Resources */,
 				03646E772800724A001F29F7 /* rain.m4a in Resources */,
 				03646E952800B529001F29F7 /* brownian.wav in Resources */,
@@ -316,13 +332,17 @@
 			files = (
 				036D7CC6280474F600D44345 /* TextAlert.swift in Sources */,
 				038AF2E12804065C00F5DBB4 /* Recorder.swift in Sources */,
+				03721DB22807F98400BA5E6F /* StatefulPreview.swift in Sources */,
 				038AF2E3280411BE00F5DBB4 /* Date.swift in Sources */,
+				03A7FFD828057F6500FBD9E7 /* DurationPicker.swift in Sources */,
+				03A7FFD628057B9200FBD9E7 /* Decrescendo.swift in Sources */,
 				03646EB82802F5A8001F29F7 /* Equalizer.swift in Sources */,
 				03646E6528006A8E001F29F7 /* ContentView.swift in Sources */,
 				03646E6328006A8E001F29F7 /* Bruit_BlancApp.swift in Sources */,
 				03646E7228006B5B001F29F7 /* Color.swift in Sources */,
 				038AF2DE2804049900F5DBB4 /* AudioRecorderState.swift in Sources */,
 				03646E97280180A8001F29F7 /* Bundle.swift in Sources */,
+				03721DB4280829FB00BA5E6F /* String.swift in Sources */,
 				03646EBA2802F632001F29F7 /* PlayState.swift in Sources */,
 				03646E7C280074F5001F29F7 /* Sounds.swift in Sources */,
 			);
@@ -468,7 +488,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Bruit Blanc/Bruit Blanc.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Bruit Blanc/Bruit BlancDebug.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 11;

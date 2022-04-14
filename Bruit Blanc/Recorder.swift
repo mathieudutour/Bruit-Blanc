@@ -120,7 +120,9 @@ struct Recorder: View {
 
 struct Recorder_Previews: PreviewProvider {
   static var previews: some View {
-    Recorder(isPresented: Binding(get: { true }, set: { _ in }), audioRecorder: AudioRecorderState()).preferredColorScheme(.dark)
+    StatefulPreview(true) {
+      Recorder(isPresented: $0, audioRecorder: AudioRecorderState()).preferredColorScheme(.dark)
+    }
   }
 }
 

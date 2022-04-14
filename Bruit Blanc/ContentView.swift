@@ -9,6 +9,12 @@ import SwiftUI
 import AVKit
 import MediaPlayer
 
+private var formatter: DateComponentsFormatter {
+  let formatter = DateComponentsFormatter()
+  formatter.allowedUnits = [.hour, .minute, .second]
+  return formatter
+}
+
 struct BuiltInSoundView: View {
   let isPlaying: Bool
   let sound: Sound
@@ -227,7 +233,9 @@ struct ContentView: View {
           .sheet(isPresented: $showingRecorder) {
             Recorder(isPresented: $showingRecorder, audioRecorder: audioRecorder)
           }
-        }.padding(.horizontal)
+        }
+        .padding(.horizontal)
+        .padding(.bottom, 100)
       }
 
       if let isPlaying = playState.isPlaying {
@@ -267,6 +275,24 @@ struct ContentView: View {
                 Label("Equalizer", systemImage: "slider.horizontal.3")
                   .labelStyle(.iconOnly)
                   .imageScale(.large)
+                if let decrescendoTimeLeft = playState.decrescendoTimeLeft {
+                  HStack {
+                    Spacer()
+                    ZStack {
+                      RoundedRectangle(cornerRadius: 11)
+                        .foregroundColor(.accentColor)
+                      HStack {
+                        Text("\(formatter.string(from: decrescendoTimeLeft) ?? "")")
+                          .foregroundColor(.backgroundColor)
+                          .font(.system(size: 10, design: .monospaced))
+                          .lineLimit(1)
+                          .padding(.all, 0)
+                      }
+                    }
+                  }
+                  .frame(height: 22)
+                  .offset(x: 6, y: -30)
+                }
               }
             }
             .padding()

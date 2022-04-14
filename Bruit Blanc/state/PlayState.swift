@@ -9,11 +9,22 @@ import SwiftUI
 import AVKit
 import MediaPlayer
 
-class PlayState: ObservableObject {
+class PlayState: NSObject, ObservableObject {
   private var players: [Sound: AVAudioPlayer] = [:]
+  private var decrescendoPlayer = AVAudioPlayer()
   
   @Published private(set) var playing: [Sound: Bool] = [:]
   @Published private(set) var volume: [Sound: Float] = [:]
+  @Published var masterVolume: Float = 1 {
+    didSet {
+      players.forEach { player in
+        player.value.volume = (volume[player.key] ?? 1) * masterVolume
+      }
+    }
+  }
+  @Published private(set) var decrescendoDuration: TimeInterval?
+  @Published private(set) var decrescendoStartTime: Date?
+  @Published private(set) var decrescendoTimeLeft: TimeInterval?
 
   var isPlaying: Bool? {
     players.isEmpty ? nil : !playing.filter { $0.value }.isEmpty
@@ -25,7 +36,7 @@ class PlayState: ObservableObject {
 
   func volumeBinding(_ sound: Sound) -> Binding<Float> {
     Binding(get: { self.volume[sound] ?? 1 }, set: {
-      self.players[sound]?.volume = $0
+      self.players[sound]?.volume = $0 * self.masterVolume
       self.volume[sound] = $0
     })
   }
@@ -35,6 +46,17 @@ class PlayState: ObservableObject {
       player.value.play()
       playing[player.key] = true
     }
+    do {
+      try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, policy: .longFormAudio)
+      try AVAudioSession.sharedInstance().setActive(true)
+
+      UIApplication.shared.beginReceivingRemoteControlEvents()
+
+      let commandCenter = MPRemoteCommandCenter.shared()
+      commandCenter.playCommand.addTarget(handler: remotePlay)
+      commandCenter.pauseCommand.addTarget(handler: remoteStop)
+    } catch {
+    }
   }
 
   func stopAll() {
@@ -42,6 +64,7 @@ class PlayState: ObservableObject {
       player.value.stop()
       playing[player.key] = false
     }
+    stopDecrescendo()
   }
 
   func play(_ sound: Sound) {
@@ -93,9 +116,33 @@ class PlayState: ObservableObject {
         let commandCenter = MPRemoteCommandCenter.shared()
         commandCenter.playCommand.removeTarget(remotePlay)
         commandCenter.pauseCommand.removeTarget(remoteStop)
+        commandCenter.stopCommand.removeTarget(remoteStop)
       } catch {
       }
     }
+  }
+
+  func startDecrescendo(duration: TimeInterval) {
+    decrescendoDuration = duration
+    decrescendoStartTime = Date()
+    decrescendoTimeLeft = duration
+
+    let url = URL(fileURLWithPath: Bundle.main.path(forResource: "silence.mp3", ofType: nil)!)
+
+    do {
+      decrescendoPlayer = try AVAudioPlayer(contentsOf: url)
+      decrescendoPlayer.volume = 0
+      decrescendoPlayer.play()
+
+      decrescendoPlayer.delegate = self
+    } catch {
+    }
+  }
+
+  func stopDecrescendo() {
+    decrescendoDuration = nil
+    decrescendoStartTime = nil
+    decrescendoTimeLeft = nil
   }
 
   private func updateNowPlaying() {
@@ -121,5 +168,29 @@ class PlayState: ObservableObject {
   private func remoteStop(_ event: MPRemoteCommandEvent) -> MPRemoteCommandHandlerStatus {
     stopAll()
     return .success
+  }
+}
+
+extension PlayState: AVAudioPlayerDelegate {
+  func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+    guard let decrescendoStartTime = decrescendoStartTime, let decrescendoDuration = decrescendoDuration else {
+      return
+    }
+
+    let timeLeft = decrescendoStartTime.addingTimeInterval(decrescendoDuration).timeIntervalSince(Date())
+
+    if timeLeft > 0 {
+      decrescendoTimeLeft = timeLeft
+
+      decrescendoPlayer.currentTime = 0
+      decrescendoPlayer.play()
+
+      let step = masterVolume / Float(timeLeft)
+      masterVolume -= step
+    } else {
+      stopAll()
+      // reset the volume at the end
+      masterVolume = 1
+    }
   }
 }
