@@ -50,7 +50,8 @@ struct EqualizerLine: View {
 struct Equalizer: View {
   @Binding var isPresented: Bool
   @ObservedObject var playState: PlayState
-  @Binding var showingDecrescendo: Bool
+  @Binding var showingDecrescendoOnIpad: Bool
+  @State private var showingDecrescendoOnIphone: Bool
 
   let columns = [
       GridItem(.fixed(100)),
@@ -113,9 +114,13 @@ struct Equalizer: View {
               if playState.decrescendoTimeLeft != nil {
                 playState.stopDecrescendo()
               } else {
-                isPresented = false
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.0001) {
-                  showingDecrescendo.toggle()
+                if UIDevice.current.userInterfaceIdiom == .pad {
+                  isPresented = false
+                  DispatchQueue.main.asyncAfter(deadline: .now() + 0.0001) {
+                    showingDecrescendoOnIpad.toggle()
+                  }
+                } else {
+                  showingDecrescendoOnIphone.toggle()
                 }
               }
             }) {
@@ -141,6 +146,9 @@ struct Equalizer: View {
             .padding()
             .frame(width: (playState.decrescendoTimeLeft != nil ? (formatter.string(from: playState.decrescendoTimeLeft ?? TimeInterval(0)) ?? "") + "000": "Decrescendo").sizeUsingFont(usingFont: UIFont.systemFont(ofSize: 16)).width + 88, height: 88)
             .shadow(radius: 10)
+            .sheet(isPresented: $showingDecrescendoOnIphone) {
+              Decrescendo(isPresented: $showingDecrescendoOnIphone, playState: playState)
+            }
           }
         }
         .navigationBarTitle(Text("Equalizer"), displayMode: .inline)

@@ -141,7 +141,7 @@ struct ContentView: View {
   @ObservedObject var audioRecorder = AudioRecorderState()
   @State private var showingEqualizer = false
   @State private var showingRecorder = false
-  @State private var showingDecrescendo = false
+  @State private var showingDecrescendoOnIpad = false
 
   var body: some View {
     ZStack {
@@ -305,10 +305,10 @@ struct ContentView: View {
       Recorder(isPresented: $showingRecorder, audioRecorder: audioRecorder)
     }
     .sheet(isPresented: $showingEqualizer) {
-      Equalizer(isPresented: $showingEqualizer, playState: playState, showingDecrescendo: $showingDecrescendo)
+      Equalizer(isPresented: $showingEqualizer, playState: playState, showingDecrescendoOnIpad: $showingDecrescendoOnIpad)
     }
-    .sheet(isPresented: $showingDecrescendo) {
-      Decrescendo(isPresented: $showingDecrescendo, playState: playState)
+    .sheet(isPresented: $showingDecrescendoOnIpad) {
+      Decrescendo(isPresented: $showingDecrescendoOnIpad, playState: playState)
     }
   }
 }

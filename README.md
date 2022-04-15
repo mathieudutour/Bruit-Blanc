@@ -1,6 +1,6 @@
 # Bruit Blanc
 
-I built this app for my newborn. They often used to be upset and cry even tho they just ate. Cuddling with them wouldn't reassure them. So I started to search for things to help them and found studies claiming that white noise helps babies to fell asleep[1][2].
+I built this app for my newborn. They often used to be upset and cry even tho they just ate. Cuddling with them wouldn't reassure them. So I started to search for things to help them and found studies claiming that white noise helps babies to fell asleep[1] [2].
 
 So I quickly generated some white noise, fleshed out a small app to loop that noise. It worked!
 
@@ -14,7 +14,7 @@ There are also a couple of additional features:
 
 - Record your own sound and add it to the mix
 - The birds are too louds? Control the volume of each sounds independently
-- Start a _decrescendo_ to lower the volume over a time
+- Start a _decrescendo_ to lower the volume over a time period
 
 ![Bruit Blanc screenshots](./assets/illustration.png)
 
