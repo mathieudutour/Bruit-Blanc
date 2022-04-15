@@ -51,7 +51,7 @@ struct Equalizer: View {
   @Binding var isPresented: Bool
   @ObservedObject var playState: PlayState
   @Binding var showingDecrescendoOnIpad: Bool
-  @State private var showingDecrescendoOnIphone: Bool
+  @State private var showingDecrescendoOnIphone: Bool = false
 
   let columns = [
       GridItem(.fixed(100)),
@@ -170,7 +170,7 @@ struct Equalizer: View {
 struct Equalizer_Previews: PreviewProvider {
   static var previews: some View {
     StatefulPreview(true) {
-      Equalizer(isPresented: $0, playState: PlayState(), showingDecrescendo: $0).preferredColorScheme(.dark)
+      Equalizer(isPresented: $0, playState: PlayState(), showingDecrescendoOnIpad: $0).preferredColorScheme(.dark)
     }
   }
 }
