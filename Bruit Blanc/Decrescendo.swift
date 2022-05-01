@@ -19,14 +19,14 @@ private var formatter: DateComponentsFormatter {
 struct Decrescendo: View {
   @Binding var isPresented: Bool
   @ObservedObject var playState: PlayState
-  @State var duration: TimeInterval = TimeInterval(30 * 60)
+  @AppStorage("decrescendoDuration") var duration: TimeInterval = TimeInterval(15 * 60)
 
   var body: some View {
     NavigationView {
       ZStack {
         Color.backgroundColor.edgesIgnoringSafeArea(.all)
         VStack {
-          Text("Start a decrescendo to progressively lower the master volume over time.")
+          Text("Start a decrescendo to progressively lower the master volume over time")
             .font(.subheadline)
             .foregroundColor(.init(white: 0.7))
             .padding()
