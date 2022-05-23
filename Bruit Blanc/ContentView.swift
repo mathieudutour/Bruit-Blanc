@@ -308,7 +308,7 @@ struct ContentView: View {
       Equalizer(isPresented: $showingEqualizer, playState: playState, showingDecrescendoOnIpad: $showingDecrescendoOnIpad)
     }
     .sheet(isPresented: $showingDecrescendoOnIpad) {
-      Decrescendo(isPresented: $showingDecrescendoOnIpad, playState: playState)
+      Decrescendo(isPresented: $showingDecrescendoOnIpad, isPresentingEqualizer: $showingEqualizer, playState: playState)
     }
   }
 }

@@ -147,7 +147,7 @@ struct Equalizer: View {
             .frame(width: (playState.decrescendoTimeLeft != nil ? (formatter.string(from: playState.decrescendoTimeLeft ?? TimeInterval(0)) ?? "") + "000": "Decrescendo").sizeUsingFont(usingFont: UIFont.systemFont(ofSize: 16)).width + 88, height: 88)
             .shadow(radius: 10)
             .sheet(isPresented: $showingDecrescendoOnIphone) {
-              Decrescendo(isPresented: $showingDecrescendoOnIphone, playState: playState)
+              Decrescendo(isPresented: $showingDecrescendoOnIphone, isPresentingEqualizer: $isPresented, playState: playState)
             }
           }
         }

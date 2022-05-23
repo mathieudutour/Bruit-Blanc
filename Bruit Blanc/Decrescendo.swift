@@ -18,6 +18,7 @@ private var formatter: DateComponentsFormatter {
 
 struct Decrescendo: View {
   @Binding var isPresented: Bool
+  @Binding var isPresentingEqualizer: Bool
   @ObservedObject var playState: PlayState
   @AppStorage("decrescendoDuration") var duration: TimeInterval = TimeInterval(15 * 60)
 
@@ -52,6 +53,7 @@ struct Decrescendo: View {
           Button(action: {
             playState.startDecrescendo(duration: duration)
             isPresented = false
+            isPresentingEqualizer = false
           }) {
             Text("Start").bold()
           }
@@ -64,7 +66,7 @@ struct Decrescendo: View {
 struct Decrescendo_Previews: PreviewProvider {
   static var previews: some View {
     StatefulPreview(true) {
-      Decrescendo(isPresented: $0, playState: PlayState()).preferredColorScheme(.dark)
+      Decrescendo(isPresented: $0, isPresentingEqualizer: $0, playState: PlayState()).preferredColorScheme(.dark)
     }
   }
 }
